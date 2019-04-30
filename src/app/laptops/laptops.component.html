@@ -1,0 +1,17 @@
+<div class="container">
+    <h5 class="text-center">Laptop</h5>
+    <div class="row">
+        <div class="col bg-dark text-white">Brand</div>
+        <div class="col bg-dark text-white">Model</div>
+        <div class="col bg-dark text-white">Price</div>
+        <div class="col bg-dark text-white"></div>
+    </div>
+    <div class="row" *ngFor="let laptop of laptopData;let i = index">
+        <div class="col ">{{laptop.brand}}</div>
+        <div class="col ">{{laptop.model}}</div>
+        <div class="col ">{{laptop.price}}</div>
+        <div class="col ">
+            <button class="btn btn-primary m-1" (click)="addData(i)">Add<i class="fas fa-cart-plus"></i></button> </div>
+
+    </div>
+</div>
